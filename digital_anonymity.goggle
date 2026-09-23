@@ -1,0 +1,34 @@
+! name: digital privacy sources
+! description: prioritizes domains i personally liked based on their merit of candour, directness, and thoroughness
+! public: true
+
+! author: anonym
+! license: MIT
+
+! $boost=4,site=
+$boost=4,site=kycnot.me
+$boost=4,site=digitalescapetools.com
+$boost=4,site=grapheneos.org
+$boost=4,site=news.ycombinator.com
+/blog/guides*$boost=4,site=proton.me
+/guides/$boost=4,site=digitalescapetools.com
+
+! $boost=3,site= (discussions and forums)
+$boost=3,site=discuss.grapheneos.org
+/comments*$boost=3,site=kycnot.me
+/classic*$boost=3,site=news.ycombinator.com
+/highlights*$boost=3,site=news.ycombinator.com
+/bestcomments?h=720*$boost=3,site=news.ycombinator.com
+$boost=3,site=privacygear.nl
+/r/privacy*$boost=3,site=www.reddit.com
+/r/opensource*$boost=3,site=www.reddit.com
+$boost=3,site=forum.torproject.org
+
+/@GrapheneOS*$boost=2,site=grapheneos.social
+$boost=2,site=genuineideas.com
+/blog*$boost=2,site=proton.me
+$boost=2,site=blog.torproject.org
+
+$downrank=3,site=example.com
+
+$discard,site=pinterest.com
